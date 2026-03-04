@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes Obsoletas Argentina - OG Image v2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 1200px;
+            height: 630px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 1120px;
+            height: 550px;
+            background: white;
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Elementos decorativos */
+        .corner-ornament {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+            opacity: 0.1;
+        }
+        
+        .balance-icon {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            font-size: 80px;
+            color: #1a365d;
+            opacity: 0.9;
+        }
+        
+        /* Header */
+        .header {
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .title {
+            font-size: 56px;
+            font-weight: 900;
+            color: #1a365d;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 32px;
+            color: #718096;
+            font-weight: 300;
+            max-width: 900px;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stat-card {
+            background: #f7fafc;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: #e53e3e;
+            box-shadow: 0 10px 25px rgba(229, 62, 62, 0.15);
+        }
+        
+        .stat-emoji {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .stat-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 20px;
+            color: #718096;
+            font-weight: 500;
+        }
+        
+        /* Quote */
+        .quote-container {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+            border-radius: 20px;
+            padding: 35px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+            border-left: 8px solid #e53e3e;
+        }
+        
+        .quote-text {
+            font-size: 26px;
+            color: white;
+            font-style: italic;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .quote-author {
+            font-size: 20px;
+            color: #cbd5e0;
+            text-align: right;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 25px;
+            border-top: 3px solid #e2e8f0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .url {
+            font-size: 24px;
+            color: #4a5568;
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .update-info {
+            font-size: 20px;
+            color: #718096;
+        }
+        
+        .highlight {
+            color: #e53e3e;
+            font-weight: 700;
+        }
+        
+        /* Badge */
+        .badge {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            background: #e53e3e;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(229, 62, 62, 0.3);
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="corner-ornament"></div>
+        <div class="balance-icon">⚖️</div>
+        
+        <div class="header">
+            <h1 class="title">LEYES OBSOLETAS ARGENTINA</h1>
+            <p class="subtitle">Descubre las leyes más absurdas que siguen vigentes y su impacto económico real</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-emoji">📚</span>
+                <div class="stat-value">20+</div>
+                <div class="stat-label">Leyes documentadas</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-emoji">💰</span>
+                <div class="stat-value">$1,200</div>
+                <div class="stat-label">Dólar oficial 2026</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-emoji">📅</span>
+                <div class="stat-value">24 años</div>
+                <div class="stat-label">Promedio obsoleto</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-emoji">🎯</span>
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Cálculos reales</div>
+            </div>
+        </div>
+        
+        <div class="quote-container">
+            <p class="quote-text">
+                "Un auto popular de $15,000 paga 'impuesto al lujo' por una ley de 1998 que considera lujoso todo auto sobre $29,000... en pesos de 1998."
+            </p>
+            <p class="quote-author">— Impuesto al Lujo Automotor (Ley 24.674)</p>
+        </div>
+        
+        <div class="footer">
+            <div class="url">leyesobsoletas.vercel.app</div>
+            <div class="update-info">Actualizado: <span class="highlight">4 de Marzo 2026</span></div>
+        </div>
+        
+        <div class="badge">¡ABSURDO PERO REAL!</div>
+    </div>
+</body>
+</html>

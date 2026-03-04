@@ -299,5 +299,74 @@ export const leyes: Ley[] = [
     tags: ['industria', 'promocion', 'beneficios', 'tech'],
     fuente: 'Ministerio Industria - Ley 21.608',
     enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-21608-63933'
+  },
+  {
+    id: '14',
+    numero: 'Ley 20.744',
+    nombre: 'Ley de Contrato de Trabajo',
+    descripcion: 'Régimen general contratos laborales. Indemnizaciones por despido no actualizadas',
+    año: 1974,
+    categoria: 'Laboral',
+    estado: 'Vigente',
+    motivoObsoleto: 'Indemnización por despido: 1 mes por año trabajado, tope USD 100,000 (1974). Hoy USD 100,000 = USD 83. Trabajador con 20 años recibe USD 1,660, no USD 100,000. Protección laboral de papel.',
+    contextoHistorico: 'Ley de gobierno peronista (1974). Contexto: pleno empleo, sindicatos fuertes, salarios altos en dólares. Indemnización diseñada para disuadir despidos en economía estable con moneda fuerte.',
+    impactoActual: 'Empresas despiden fácilmente: costo USD 1,660 vs costo mantener empleado USD 20,000/año. Informalidad: 45% trabajadores sin protección. Trabajador formal con 30 años: indemnización USD 2,490 = 1.5 meses salario, no 30 meses.',
+    datosEconomicos: {
+      dolarOficialEntonces: 0.01,
+      dolarBlueEntonces: 0.02,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 12000000,
+      ejemploConcreto: '1974: Salario USD 1,000/mes. Indemnización 20 años: USD 20,000 = 20 meses salario. 2026: Salario USD 500/mes. Indemnización 20 años: USD 1,660 = 3.3 meses salario. Protección reducida 83%.'
+    },
+    tags: ['trabajo', 'despido', 'indemnizacion', 'laboral'],
+    fuente: 'Ministerio Trabajo - Ley 20.744',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-20744-639'
+  },
+  {
+    id: '15',
+    numero: 'Ley 24.557',
+    nombre: 'Riesgos del Trabajo (actualización)',
+    descripcion: 'Sistema de indemnizaciones por accidentes laborales. Topes máximos en pesos no actualizados',
+    año: 1995,
+    categoria: 'Laboral',
+    estado: 'Vigente',
+    motivoObsoleto: 'Tope máximo indemnización: $300,000 (USD 300,000 en 1995, USD 250 hoy). Trabajador con incapacidad total recibe USD 250, no USD 300,000. Seguro laboral sin cobertura real.',
+    contextoHistorico: 'Reforma laboral menemista (1995). Contexto: Convertibilidad, dolarización, inflación 0%. Topes en pesos equivalentes a USD fijos. Nunca se indexaron: $1 = USD 1 mentalidad persistente.',
+    impactoActual: 'Trabajadores accidentados sin protección: 95% casos reciben menos de USD 1,000. Empresas subaseguran: prima anual USD 100/empleado vs indemnización potencial USD 250. Incentivo perverso: menos seguridad = menos costo.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1.1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: '1995: Accidente muerte, indemnización USD 300,000 (familia protegida). 2026: Mismo accidente, indemnización USD 250 (ni funeral). Ajuste necesario: $360M pesos. Actual: $300,000 pesos (0.08% del ajustado).'
+    },
+    tags: ['riesgos', 'accidentes', 'seguro', 'trabajo'],
+    fuente: 'Ministerio Trabajo - Ley 24.557',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-24557-119629'
+  },
+  {
+    id: '16',
+    numero: 'Ley 24.013',
+    nombre: 'Ley de Empleo',
+    descripcion: 'Régimen promoción empleo. Subsidios y beneficios no actualizados',
+    año: 1991,
+    categoria: 'Laboral',
+    estado: 'Vigente',
+    motivoObsoleto: 'Subsidio por contratación joven: $150,000 anual (USD 150,000 en 1991, USD 125 hoy). Empresa recibe USD 125 por contratar joven, costo empleado USD 6,000/año. Incentivo 2%, no 100%.',
+    contextoHistorico: 'Ley de Convertibilidad (1991). Contexto: desempleo 6%, economía en crecimiento, subsidios generosos para reactivación. Montos en pesos = USD por paridad 1:1. Nunca se ajustaron por inflación en dólares.',
+    impactoActual: 'Desempleo juvenil 25% (600,000 jóvenes). Subsidio cubre 2% costo empleado, no incentiva contratación. Empresas prefieren automatizar: robot USD 20,000 vs empleado USD 6,000 + subsidio USD 125. Ley contraproducente.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: '1991: Salario joven USD 6,000/año. Subsidio USD 6,000 = 100% costo. 2026: Salario joven USD 6,000/año. Subsidio USD 125 = 2% costo. Para ser efectivo debería ser USD 6,000 (ajuste 4,800%).'
+    },
+    tags: ['empleo', 'jovenes', 'subsidios', 'desempleo'],
+    fuente: 'Ministerio Trabajo - Ley 24.013',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-24013-63931'
   }
 ];

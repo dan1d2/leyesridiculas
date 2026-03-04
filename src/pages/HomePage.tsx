@@ -101,7 +101,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <VStack spacing={6} align="start" mb={10}>
         <Heading size="2xl" color="brand.600">
-          Leyes Ridículas de Argentina
+          Leyes Obsoletas de Argentina
         </Heading>
         <Text fontSize="xl" color="gray.600" maxW="3xl">
           Descubre las leyes obsoletas que siguen vigentes en Argentina, 

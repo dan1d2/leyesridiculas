@@ -13,7 +13,7 @@ const Navbar = () => {
           <HStack spacing={8}>
             <RouterLink to="/">
               <Heading size="lg" color="brand.600">
-                LeyesRidículas
+                LeyesObsoletas
               </Heading>
               <Box fontSize="sm" color="gray.600" mt={-1}>
                 .com.ar

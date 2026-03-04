@@ -340,10 +340,10 @@ const HomePage = () => {
           
           <VStack align="center" spacing={3}>
             <Heading size="2xl" color="orange.500">
-              {Math.round(leyes.reduce((acc, ley) => acc + ley.datosEconomicos.inflacionAcumulada, 0) / leyes.length)}%
+              {new Date().getFullYear() - Math.round(leyes.reduce((acc, ley) => acc + ley.año, 0) / leyes.length)}
             </Heading>
             <Text textAlign="center" color="gray.600">
-              Inflación promedio acumulada
+              Años promedio de obsolescencia
             </Text>
           </VStack>
         </SimpleGrid>

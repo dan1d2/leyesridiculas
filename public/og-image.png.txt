@@ -1,0 +1,12 @@
+Placeholder para imagen OG de redes sociales
+Crear imagen de 1200x630px con:
+- Título: "Leyes Obsoletas de Argentina"
+- Subtítulo: "Las leyes más ridículas que siguen vigentes"
+- Logo/icono
+- URL: leyesobsoletas.com.ar
+
+Para crear:
+1. Usar herramienta como Canva
+2. Exportar como PNG 1200x630
+3. Subir a /public/og-image.png
+4. Hacer lo mismo para twitter-image.png (1200x600)

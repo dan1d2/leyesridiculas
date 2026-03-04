@@ -115,5 +115,120 @@ export const leyes: Ley[] = [
     tags: ['edificios', 'seguridad', 'multas', 'construccion'],
     fuente: 'Ministerio Interior - Decreto 1.010/2004',
     enlace: 'https://www.argentina.gob.ar/normativa/decreto-1010-2004-60040'
+  },
+  {
+    id: '6',
+    numero: 'Ley 27.541',
+    nombre: 'Impuesto PAIS',
+    descripcion: 'Impuesto del 30% sobre compras en moneda extranjera y servicios digitales del exterior',
+    año: 2019,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Creado como medida "temporal" para frenar fuga de capitales. 5 años después sigue vigente. Recauda $4 billones anuales (USD 3.3B) pero distorsiona precios: Netflix Argentina 30% más caro que Chile.',
+    contextoHistorico: 'Sancionada por Alberto Fernández en diciembre 2019, días después de asumir. Contexto: crisis cambiaria, reservas BCRA en mínimos (USD 44B), fuga de capitales USD 30B en 2019. Medida de emergencia que se volvió permanente.',
+    impactoActual: 'Argentinos pagan 30% extra por: software (Adobe, Microsoft), streaming (Netflix, Spotify), cursos online (Coursera, Udemy), hosting web. Empresas locales no pueden competir: AWS 30% más caro que Brasil.',
+    datosEconomicos: {
+      dolarOficialEntonces: 63,
+      dolarBlueEntonces: 75,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 1800,
+      ejemploConcreto: 'Netflix Standard: USD 15.49/mes. Con PAIS: USD 20.14 (30% extra). Argentino paga USD 242/año vs chileno USD 186. Diferencia: USD 56 anual por ley "temporal".'
+    },
+    tags: ['pais', 'dolar', 'importaciones', 'servicios', 'temporal'],
+    fuente: 'AFIP - Resolución General 4.650/2019',
+    enlace: 'https://www.afip.gob.ar/leyes/resolucion4650/'
+  },
+  {
+    id: '7',
+    numero: 'Ley 20.628',
+    nombre: 'Impuesto a las Ganancias',
+    descripcion: 'Impuesto progresivo sobre ganancias de personas físicas. Topes y escalas no actualizados',
+    año: 1973,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Escalas de 1973 con topes en pesos nunca ajustados por inflación. Sueldo mínimo no imponible: $2.3M pesos (USD 1,917) pero se aplica a sueldos desde $500k (USD 417). Clase media paga impuesto para ricos.',
+    contextoHistorico: 'Ley de la dictadura (1973). Argentina con inflación 44% anual, economía cerrada, salarios en pesos constantes. Diseñada para gravar "altos ingresos" en contexto de estabilidad monetaria que ya no existe.',
+    impactoActual: '5M argentinos pagan Ganancias (20% fuerza laboral). Maestra con sueldo USD 500 paga mismo impuesto que ejecutivo USD 5,000 en 1973. Recaudación: $8 billones anuales (USD 6.7B) de clase media, no de ricos.',
+    datosEconomicos: {
+      dolarOficialEntonces: 0.01,
+      dolarBlueEntonces: 0.02,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 12000000,
+      ejemploConcreto: 'Tope no imponible 1973: $120,000 anuales = USD 12,000 (salario alto). Tope 2026: $2.3M mensuales = USD 1,917 (salario bajo). Ajuste necesario: $144M mensuales = USD 120,000. Nunca se hizo.'
+    },
+    tags: ['ganancias', 'sueldos', 'clasemedia', 'escalas'],
+    fuente: 'AFIP - Texto Ley 20.628',
+    enlace: 'https://www.afip.gob.ar/leyes/20628/'
+  },
+  {
+    id: '8',
+    numero: 'Ley 24.674',
+    nombre: 'IVA Digital',
+    descripcion: 'Impuesto al Valor Agregado para servicios digitales. Tasas y definiciones obsoletas',
+    año: 1996,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Ley pre-internet (1996) que no contempla economía digital. "Servicio digital" definido como "transmisión de datos" sin especificar streaming, cloud, SaaS. AFIP interpreta extensivamente: curso online = IVA 21%, libro físico = 0%.',
+    contextoHistorico: 'Sancionada durante auge telefónico fijo (1996). Internet dial-up, 0.1% penetración. Ley pensada para "servicios de valor agregado telefónico" (tonos, ringtones), no para Netflix o AWS.',
+    impactoActual: 'Startups argentinas pagan IVA 21% por AWS, Google Cloud, GitHub. Competidores extranjeros no pagan. Distorsión: empresa argentina paga USD 1,210 por servicio que cuesta USD 1,000. Competidor uruguayo paga USD 1,000.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: 'Startup con AWS bill USD 5,000/mes. IVA 21%: USD 1,050 extra. Anual: USD 12,600 en impuesto por ley de 1996. Mismo servicio en Chile: 0% IVA digital.'
+    },
+    tags: ['iva', 'digital', 'internet', 'startups', 'tecnologia'],
+    fuente: 'AFIP - Ley 24.674',
+    enlace: 'https://www.afip.gob.ar/leyes/24674/'
+  },
+  {
+    id: '9',
+    numero: 'Ley 23.966',
+    nombre: 'Impuesto a los Bienes Personales',
+    descripcion: 'Impuesto sobre patrimonio personal. Exenciones y topes no actualizados',
+    año: 1991,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Exención: USD 100,000 en 1991 (equivalente a 3 departamentos). Hoy USD 100,000 = 0.3 departamentos. Clase media con departamento heredado paga impuesto para millonarios.',
+    contextoHistorico: 'Ley de Convertibilidad (1991). Argentina saliendo de hiperinflación, dolarización. USD 100,000 era fortuna (departamento USD 30,000, auto USD 15,000). Objetivo: gravar "grandes patrimonios" en economía estable.',
+    impactoActual: '300,000 argentinos pagan Bienes Personales. Muchos son clase media con propiedad familiar. Recaudación: $600,000M anuales (USD 500M) de pequeños patrimonios, no de grandes fortunas. Evasión patrimonial real: 95%.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: '1991: Departamento Recoleta USD 30,000. Exención USD 100,000 = 3.3 departamentos (rico). 2026: Departamento Recoleta USD 300,000. Exención USD 100,000 = 0.33 departamentos (clase media).'
+    },
+    tags: ['patrimonio', 'bienes', 'propiedades', 'clasemedia'],
+    fuente: 'AFIP - Ley 23.966',
+    enlace: 'https://www.afip.gob.ar/leyes/23966/'
+  },
+  {
+    id: '10',
+    numero: 'Ley 25.413',
+    nombre: 'Impuesto a los Débitos y Créditos Bancarios',
+    descripcion: 'Impuesto del 0.6% sobre movimientos bancarios (conocido como "impuesto al cheque")',
+    año: 2001,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Creado como medida de emergencia post-crisis 2001. 25 años después sigue vigente. Argentina único país con impuesto a movimientos bancarios: pyme paga 0.6% por cada transferencia, depósito, extracción.',
+    contextoHistorico: 'Sancionada en plena crisis 2001 (corralito, default). Objetivo: recaudar rápido sin legislar nuevos impuestos. Medida "transitoria" que sobrevivió 5 gobiernos, 4 presidentes, 2 defaults.',
+    impactoActual: 'Pyme con 100 movimientos/mes paga 0.6% × 100 = 60% extra en costos financieros. Informalidad incentivada: comerciante prefiere efectivo para evitar 0.6%. Recaudación: $3 billones anuales (USD 2.5B) de economía formal.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1.4,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: 'Pyme paga sueldos: 10 empleados × $500k = $5M. Impuesto: 0.6% = $30,000 (USD 25). Mensual: USD 300, anual: USD 3,600. Competidor informal paga 0%.'
+    },
+    tags: ['cheque', 'bancos', 'transferencias', 'pymes', 'emergencia'],
+    fuente: 'BCRA - Comunicación A 4.612',
+    enlace: 'https://www.bcra.gob.ar/MediosPago/Comunicacion_A_4612.asp'
   }
 ];

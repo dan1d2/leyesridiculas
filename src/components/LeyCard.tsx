@@ -27,15 +27,37 @@ const LeyCard = ({ ley }: LeyCardProps) => {
   const getEstadoColor = (estado: string) => {
     switch (estado) {
       case 'Vigente':
-        return 'red'
+        return 'red' // ¡Peligro! Sigue vigente
       case 'Derogada':
-        return 'green'
+        return 'green' // Al menos esta ya no jode
       case 'Modificada':
-        return 'yellow'
+        return 'yellow' // Parche sobre parche
       case 'En revisión':
-        return 'blue'
+        return 'blue' // Tal vez la arreglen... algún día
       default:
         return 'gray'
+    }
+  }
+
+  // Texto irónico según categoría
+  const getIronicText = (categoria: string) => {
+    switch (categoria) {
+      case 'Impuestos':
+        return '¡Porque pagar menos es un lujo!'
+      case 'Comercial':
+        return 'Negocios del siglo pasado'
+      case 'Laboral':
+        return 'Trabajar debería dar risa'
+      case 'Monetaria':
+        return 'Cuando $1 = $1 (en sueños)'
+      case 'Administrativa':
+        return 'Burocracia vintage'
+      case 'Educación':
+        return 'Enseñanzas obsoletas'
+      case 'Salud':
+        return 'Remedios de museo'
+      default:
+        return 'Reliquia legislativa'
     }
   }
 
@@ -79,6 +101,9 @@ const LeyCard = ({ ley }: LeyCardProps) => {
             </Heading>
             <Text color="gray.600" fontSize="sm">
               {ley.numero} • {ley.año}
+            </Text>
+            <Text fontSize="xs" fontStyle="italic" color="orange.500">
+              {getIronicText(ley.categoria)}
             </Text>
           </VStack>
           <Badge colorScheme={getEstadoColor(ley.estado)} fontSize="sm" px={3} py={1} borderRadius="full">

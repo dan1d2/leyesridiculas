@@ -25,6 +25,7 @@ import {
 import { ArrowBackIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { leyes } from '../data/leyes'
 import { Ley } from '../types'
+import ShareButtons from '../components/ShareButtons'
 
 const LeyDetailPage = () => {
   const { id } = useParams<{ id: string }>()
@@ -125,6 +126,14 @@ const LeyDetailPage = () => {
             <Text fontSize="lg" color="gray.700" maxW="3xl">
               {ley.descripcion}
             </Text>
+
+            {/* Botones de compartir */}
+            <Box mt={4}>
+              <Text fontSize="sm" color="gray.500" mb={2}>
+                Compartir esta ley:
+              </Text>
+              <ShareButtons ley={ley} />
+            </Box>
           </VStack>
         </Box>
 

@@ -368,5 +368,97 @@ export const leyes: Ley[] = [
     tags: ['empleo', 'jovenes', 'subsidios', 'desempleo'],
     fuente: 'Ministerio Trabajo - Ley 24.013',
     enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-24013-63931'
+  },
+  {
+    id: '17',
+    numero: 'Ley 21.526',
+    nombre: 'Ley de Entidades Financieras',
+    descripcion: 'Régimen regulación bancos y financieras. Límites y requisitos en pesos no actualizados',
+    año: 1977,
+    categoria: 'Monetaria',
+    estado: 'Vigente',
+    motivoObsoleto: 'Capital mínimo banco: $100,000,000 (USD 100M en 1977, USD 83,333 hoy). Cualquier fintech tiene más capital que requisito legal. Regulación bancaria de juguete.',
+    contextoHistorico: 'Ley de dictadura (1977). Contexto: economía cerrada, banca estatal, inflación 150% anual pero estable. Requisitos en pesos con valor real en contexto inflacionario controlado.',
+    impactoActual: 'Fintechs operan con requisitos mínimos ridículos: neobanco con USD 100,000 cumple ley para USD 100M. Riesgo sistémico: banco puede quebrar con USD 83,333 capital. BCRA regula con leyes de 1977, no con realidad 2026.',
+    datosEconomicos: {
+      dolarOficialEntonces: 0.001,
+      dolarBlueEntonces: 0.002,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000000,
+      ejemploConcreto: '1977: Capital mínimo USD 100M = 100× salario presidente. 2026: Capital mínimo USD 83,333 = 0.08× salario presidente. Ajuste necesario: $120,000,000,000 pesos. Actual: $100M pesos (0.00008% del ajustado).'
+    },
+    tags: ['bancos', 'financieras', 'capital', 'regulacion'],
+    fuente: 'BCRA - Ley 21.526',
+    enlace: 'https://www.bcra.gob.ar/Pdfs/leyyreg/Ley21526.pdf'
+  },
+  {
+    id: '18',
+    numero: 'Comunicación A 6.650',
+    nombre: 'Cepo Cambiario',
+    descripcion: 'Restricciones compra y venta moneda extranjera. Límites y requisitos',
+    año: 2019,
+    categoria: 'Monetaria',
+    estado: 'Vigente',
+    motivoObsoleto: 'Límite compra dólar ahorro: USD 200/mes (2019). Hoy USD 200 = 0.16 salario mínimo vs 2019: USD 200 = 0.5 salario mínimo. Restricción diseñada para clase media 2019, hoy afecta pobres.',
+    contextoHistorico: 'Implementado por Mauricio Macri (2019), mantenido por Alberto Fernández, Javier Milei. Contexto: crisis cambiaria, fuga capitales, reservas BCRA mínimas. Medida "temporal" que lleva 7 años.',
+    impactoActual: 'Argentino ahorra USD 200/mes = USD 2,400/año. Necesita 50 años para ahorrar USD 120,000 (departamento). Inversión imposible: ETF S&P500 mínimo USD 10,000 = 50 meses de ahorro. Ahorrista condenado a pesos.',
+    datosEconomicos: {
+      dolarOficialEntonces: 45,
+      dolarBlueEntonces: 65,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 2600,
+      ejemploConcreto: '2019: Salario USD 400, ahorro USD 200 = 50% salario. 2026: Salario USD 250, ahorro USD 200 = 80% salario. Restricción más severa: clase media 2019 no puede ahorrar 2026.'
+    },
+    tags: ['cepo', 'dolar', 'ahorro', 'restricciones'],
+    fuente: 'BCRA - Comunicación A 6.650',
+    enlace: 'https://www.bcra.gob.ar/Pdfs/comytexord/A6650.pdf'
+  },
+  {
+    id: '19',
+    numero: 'Ley 19.549',
+    nombre: 'Ley de Procedimiento Administrativo',
+    descripcion: 'Régimen procedimientos administrativos. Plazos y multas no actualizados',
+    año: 1972,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Plazo estado responde trámite: 30 días (1972). Hoy 30 días = 1 mes inflación 12.5% (150% anual). Ciudadano espera 30 días, valor peso cae 12.5%. Justicia administrativa lenta = justicia denegada.',
+    contextoHistorico: 'Ley de gobierno militar (1972). Contexto: inflación 20% anual (alta pero estable), burocracia pequeña, trámites simples. Plazos diseñados para economía pre-hiperinflación.',
+    impactoActual: 'Trámite AFIP: 30 días respuesta. Empresa espera 30 días, inflación 12.5%, costo real 12.5% extra. Burocracia incentiva demora: funcionario gana igual, ciudadano pierde 12.5% mensual. Justicia para ricos (abogados caros) vs pobres.',
+    datosEconomicos: {
+      dolarOficialEntonces: 0.005,
+      dolarBlueEntonces: 0.01,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 24000000,
+      ejemploConcreto: 'Empresa reclama devolución IVA USD 100,000. Plazo 30 días. Inflación 12.5% = USD 12,500 pérdida. Estado ahorra USD 12,500 por mes de demora. Incentivo perverso: demorar trámites = ahorro fiscal.'
+    },
+    tags: ['burocracia', 'plazos', 'administrativo', 'tramites'],
+    fuente: 'Ministerio Justicia - Ley 19.549',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-19549-63935'
+  },
+  {
+    id: '20',
+    numero: 'Ley 25.188',
+    nombre: 'Ley de Ética Pública',
+    descripcion: 'Régimen declaraciones juradas y conflictos de interés. Montos y sanciones no actualizados',
+    año: 1999,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Declaración jurada obligatoria: patrimonio > $200,000 (USD 200,000 en 1999, USD 167 hoy). Cualquier funcionario con auto 0km debe declarar. Sistema diseñado para detectar corrupción grande, hoy detecta clase media.',
+    contextoHistorico: 'Ley de gobierno radical (1999). Contexto: Convertibilidad, estabilidad pre-crisis 2001. Montos en pesos = USD por paridad 1:1. Objetivo: detectar enriquecimiento ilícito en funcionarios con patrimonios USD 200k+.',
+    impactoActual: '1M funcionarios declaran por tener auto USD 20,000. Oficina Anticorrupción sobrecargada: 99% declaraciones son patrimonios legítimos pequeños. Corrupción real (USD 10M+) pasa desapercibida: ruido > señal.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1.2,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: '1999: Patrimonio sospechoso USD 200,000 = 10 departamentos. 2026: Patrimonio sospechoso USD 167 = 0.05 departamento. Ajuste necesario: $240M pesos. Actual: $200,000 pesos (0.08% del ajustado).'
+    },
+    tags: ['etica', 'corrupcion', 'declaraciones', 'funcionarios'],
+    fuente: 'Oficina Anticorrupción - Ley 25.188',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-25188-63937'
   }
 ];

@@ -230,5 +230,74 @@ export const leyes: Ley[] = [
     tags: ['cheque', 'bancos', 'transferencias', 'pymes', 'emergencia'],
     fuente: 'BCRA - Comunicación A 4.612',
     enlace: 'https://www.bcra.gob.ar/MediosPago/Comunicacion_A_4612.asp'
+  },
+  {
+    id: '11',
+    numero: 'Ley 27.551',
+    nombre: 'Ley de Alquileres',
+    descripcion: 'Regulación de contratos de alquiler. Índice de actualización: ICL (Índice Contratos de Locación)',
+    año: 2020,
+    categoria: 'Comercial',
+    estado: 'Vigente',
+    motivoObsoleto: 'Índice ICL basado en salarios e inflación, pero con desfase de 6 meses. Inquilino paga aumentos por inflación pasada, no actual. Contrato 2024: alquiler USD 300, 2025: USD 150 (50% caída en dólares).',
+    contextoHistorico: 'Sancionada durante pandemia (2020). Contexto: crisis alquileres, oferta colapsada (-40% en CABA), inquilinos desalojados. Ley para "proteger inquilinos" pero destruyó oferta: 2024: 80% menos propiedades en alquiler vs 2019.',
+    impactoActual: 'Propietarios retiran propiedades: oferta CABA 20,000 vs 100,000 en 2019. Inquilinos pagan más por menos: alquiler promedio USD 300 (2020) vs USD 500 informal (2024). Ley logró opuesto: menos protección, más costo.',
+    datosEconomicos: {
+      dolarOficialEntonces: 84,
+      dolarBlueEntonces: 130,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 1300,
+      ejemploConcreto: 'Alquiler 2020: $25,000 = USD 300. Ajuste ICL 2024: $300,000 = USD 250. Propietario pierde 17% en dólares. Prefiere vender: propiedad USD 100,000 → USD 150,000 (50% ganancia). Oferta desaparece.'
+    },
+    tags: ['alquileres', 'vivienda', 'ic', 'propiedades'],
+    fuente: 'Ministerio Desarrollo Territorial - Ley 27.551',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-27551-336625'
+  },
+  {
+    id: '12',
+    numero: 'Ley 24.240',
+    nombre: 'Ley de Defensa del Consumidor',
+    descripcion: 'Protección derechos consumidores. Multas y topes no actualizados',
+    año: 1993,
+    categoria: 'Comercial',
+    estado: 'Vigente',
+    motivoObsoleto: 'Multa máxima: $1,000,000 (USD 1M en 1993, USD 833 hoy). Empresa gana USD 10M violando ley, riesgo multa USD 833. Defensa del Consumidor sin dientes.',
+    contextoHistorico: 'Ley pionera en América Latina (1993). Argentina con Convertibilidad, estabilidad de precios, consumismo. Multas diseñadas para disuadir en economía estable, no en hiperinflación.',
+    impactoActual: 'Empresas ignoran garantías: costo reposición USD 1,000 vs multa USD 833. Telcos cobran servicios no contratados: ganancia USD 10M, multa USD 833. Consumidor sin protección real: 90% reclamos no resueltos.',
+    datosEconomicos: {
+      dolarOficialEntonces: 1,
+      dolarBlueEntonces: 1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000,
+      ejemploConcreto: 'Empresa vende producto defectuoso USD 500 a 100,000 clientes: ganancia USD 50M. Multa máxima: USD 833. ROI violar ley: 60,000:1. No hay disuasión.'
+    },
+    tags: ['consumidor', 'multas', 'garantias', 'defensa'],
+    fuente: 'Secretaría Comercio - Ley 24.240',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-24240-451'
+  },
+  {
+    id: '13',
+    numero: 'Ley 21.608',
+    nombre: 'Ley de Promoción Industrial',
+    descripcion: 'Régimen promoción industrial con beneficios fiscales y aduaneros',
+    año: 1977,
+    categoria: 'Comercial',
+    estado: 'Vigente',
+    motivoObsoleto: 'Beneficios diseñados para industria pesada 1970s (siderurgia, petroquímica). No contempla tech, software, biotecnología. Startup SaaS paga 35% impuestos, fábrica contaminante paga 0%.',
+    contextoHistorico: 'Ley de dictadura (1977). Modelo industrialista, sustitución importaciones. Beneficios para industrias "estratégicas" definidas en 1977: acero, aluminio, automotores. Tech no existía como sector.',
+    impactoActual: 'Argentina pierde inversión tech: Chile da beneficios a startups, Argentina da a fábricas obsoletas. Ejemplo: fábrica de autopartes 1978 sigue con beneficios 2026, startup AI 2024 paga full impuestos. Distorsión competitiva total.',
+    datosEconomicos: {
+      dolarOficialEntonces: 0.001,
+      dolarBlueEntonces: 0.002,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 120000000,
+      ejemploConcreto: 'Fábrica automotriz 1978: inversión USD 100M, beneficios USD 50M (50% ROI). Startup AI 2024: inversión USD 10M, beneficios USD 0. Chile: misma startup, beneficios USD 3M (30% ROI). Argentina pierde inversión.'
+    },
+    tags: ['industria', 'promocion', 'beneficios', 'tech'],
+    fuente: 'Ministerio Industria - Ley 21.608',
+    enlace: 'https://www.argentina.gob.ar/normativa/nacional/ley-21608-63933'
   }
 ];

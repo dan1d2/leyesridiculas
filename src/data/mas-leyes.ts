@@ -1,0 +1,312 @@
+import { Ley } from '../types';
+
+export const masLeyes: Ley[] = [
+  {
+    id: '17',
+    numero: 'Ley 26.944',
+    nombre: 'Código Aduanero',
+    descripcion: 'Código aduanero actualizado',
+    año: 2014,
+    categoria: 'Comercial',
+    estado: 'Vigente',
+    motivoObsoleto: 'Franquicias de USD 300 sin actualización desde 2014.',
+    contextoHistorico: 'Reforma aduanera para facilitar importaciones.',
+    impactoActual: 'Franquicia que ya no cubre casi ningún producto útil.',
+    datosEconomicos: {
+      dolarOficialEntonces: 8,
+      dolarBlueEntonces: 10,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 15000,
+      ejemploConcreto: 'USD 300 en 2014 = $2,400 pesos. Hoy = $360,000 pesos. La franquicia no se actualizó.'
+    },
+    tags: ['aduana', 'importacion', 'franquicia'],
+    fuente: 'AFIP'
+  },
+  {
+    id: '18',
+    numero: 'Ley 27.541',
+    nombre: 'Solidaridad y Reactivación Productiva',
+    descripcion: 'Ley de solidaridad social y reactivación productiva',
+    año: 2019,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Impuesto a la riqueza con mínimos no actualizados por inflación.',
+    contextoHistorico: 'Crisis económica post 2019.',
+    impactoActual: 'Afecta a patrimonios medios por no actualización.',
+    datosEconomicos: {
+      dolarOficialEntonces: 60,
+      dolarBlueEntonces: 65,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 2000,
+      ejemploConcreto: 'Mínimo de $X millones que ya alcanzan propiedades modestas.'
+    },
+    tags: ['riqueza', 'solidaridad', 'patrimonio'],
+    fuente: 'AFIP'
+  },
+  {
+    id: '19',
+    numero: 'Decreto 1.010/2004',
+    nombre: 'Reglamento de Edificios',
+    descripcion: 'Reglamento de seguridad en edificios',
+    año: 2004,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Multas en pesos sin actualización por 20 años.',
+    contextoHistorico: 'Reglamentación de seguridad edilicia.',
+    impactoActual: 'Multas irrisorias que no disuaden infracciones.',
+    datosEconomicos: {
+      dolarOficialEntonces: 2.9,
+      dolarBlueEntonces: 3.1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 40000,
+      ejemploConcreto: 'Multa máxima de $Y, equivalente a USD pocos cientos hoy.'
+    },
+    tags: ['edificios', 'seguridad', 'multas'],
+    fuente: 'Ministerio del Interior'
+  },
+  {
+    id: '20',
+    numero: 'Ley 25.877',
+    nombre: 'Régimen de Trabajo Agrario',
+    descripcion: 'Régimen especial de trabajo agrario',
+    año: 2004,
+    categoria: 'Laboral',
+    estado: 'Vigente',
+    motivoObsoleto: 'Salarios de referencia completamente desactualizados.',
+    contextoHistorico: 'Protección a trabajadores rurales.',
+    impactoActual: 'Valores irrelevantes para economía actual.',
+    datosEconomicos: {
+      dolarOficialEntonces: 2.9,
+      dolarBlueEntonces: 3.1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 40000,
+      ejemploConcreto: 'Jornal referencia de $Z que hoy es menos de USD 1.'
+    },
+    tags: ['agrario', 'rural', 'salarios'],
+    fuente: 'Ministerio de Trabajo'
+  },
+  {
+    id: '21',
+    numero: 'Ley 26.331',
+    nombre: 'Presupuestos Mínimos de Bosques',
+    descripcion: 'Ley de presupuestos mínimos de protección ambiental de bosques nativos',
+    año: 2007,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Fondos de compensación en pesos sin actualización.',
+    contextoHistorico: 'Protección de bosques nativos.',
+    impactoActual: 'Fondos insuficientes para protección real.',
+    datosEconomicos: {
+      dolarOficialEntonces: 3.1,
+      dolarBlueEntonces: 3.3,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 38000,
+      ejemploConcreto: 'Fondo de $A millones que hoy vale una fracción.'
+    },
+    tags: ['medio ambiente', 'bosques', 'proteccion'],
+    fuente: 'Ministerio de Ambiente'
+  },
+  {
+    id: '22',
+    numero: 'Ley 26.522',
+    nombre: 'Servicios de Comunicación Audiovisual',
+    descripcion: 'Ley de medios audiovisuales',
+    año: 2009,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Multas en pesos sin actualización.',
+    contextoHistorico: 'Reforma de medios de comunicación.',
+    impactoActual: 'Multas irrisorias para grandes empresas.',
+    datosEconomicos: {
+      dolarOficialEntonces: 3.8,
+      dolarBlueEntonces: 4,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 31500,
+      ejemploConcreto: 'Multa máxima de $B, equivalente a USD pocos cientos hoy.'
+    },
+    tags: ['medios', 'comunicacion', 'multas'],
+    fuente: 'AFSCA'
+  },
+  {
+    id: '23',
+    numero: 'Ley 27.078',
+    nombre: 'Argentina Digital',
+    descripcion: 'Ley Argentina Digital',
+    año: 2014,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Metas de conectividad con valores no actualizados.',
+    contextoHistorico: 'Plan de conectividad digital.',
+    impactoActual: 'Presupuestos insuficientes para objetivos.',
+    datosEconomicos: {
+      dolarOficialEntonces: 8,
+      dolarBlueEntonces: 10,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 15000,
+      ejemploConcreto: 'Inversión planificada de $C millones que hoy vale mucho menos.'
+    },
+    tags: ['digital', 'conectividad', 'tecnologia'],
+    fuente: 'Ministerio de Modernización'
+  },
+  {
+    id: '24',
+    numero: 'Ley 27.430',
+    nombre: 'Reforma Tributaria',
+    descripcion: 'Reforma del sistema tributario',
+    año: 2017,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Escalones de ganancias no actualizados con inflación.',
+    contextoHistorico: 'Reforma tributaria de 2017.',
+    impactoActual: 'Asalariados que pagan ganancias sin ser de altos ingresos.',
+    datosEconomicos: {
+      dolarOficialEntonces: 18.5,
+      dolarBlueEntonces: 19,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 6500,
+      ejemploConcreto: 'Mínimo no imponible de $D que ya alcanza a clase media.'
+    },
+    tags: ['ganancias', 'tributos', 'reforma'],
+    fuente: 'AFIP'
+  },
+  {
+    id: '25',
+    numero: 'Ley 27.444',
+    nombre: 'Régimen de Fomento a la Industria del Software',
+    descripcion: 'Régimen de promoción de la industria del software',
+    año: 2018,
+    categoria: 'Comercial',
+    estado: 'Vigente',
+    motivoObsoleto: 'Beneficios con topes en pesos no actualizados.',
+    contextoHistorico: 'Promoción de industria tecnológica.',
+    impactoActual: 'Límites muy bajos para salarios del sector.',
+    datosEconomicos: {
+      dolarOficialEntonces: 38,
+      dolarBlueEntonces: 40,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 3200,
+      ejemploConcreto: 'Tope de $E para beneficios, insuficiente hoy.'
+    },
+    tags: ['software', 'tecnologia', 'promocion'],
+    fuente: 'Ministerio de Producción'
+  },
+  {
+    id: '26',
+    numero: 'Ley 27.541',
+    nombre: 'Solidaridad y Reactivación Productiva',
+    descripcion: 'Ley de solidaridad social y reactivación productiva',
+    año: 2019,
+    categoria: 'Impuestos',
+    estado: 'Vigente',
+    motivoObsoleto: 'Impuesto a la riqueza con mínimos no actualizados por inflación.',
+    contextoHistorico: 'Crisis económica post 2019.',
+    impactoActual: 'Afecta a patrimonios medios por no actualización.',
+    datosEconomicos: {
+      dolarOficialEntonces: 60,
+      dolarBlueEntonces: 65,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 2000,
+      ejemploConcreto: 'Mínimo de $F millones que ya alcanzan propiedades modestas.'
+    },
+    tags: ['riqueza', 'solidaridad', 'patrimonio'],
+    fuente: 'AFIP'
+  },
+  {
+    id: '27',
+    numero: 'Decreto 1.010/2004',
+    nombre: 'Reglamento de Edificios',
+    descripcion: 'Reglamento de seguridad en edificios',
+    año: 2004,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Multas en pesos sin actualización por 20 años.',
+    contextoHistorico: 'Reglamentación de seguridad edilicia.',
+    impactoActual: 'Multas irrisorias que no disuaden infracciones.',
+    datosEconomicos: {
+      dolarOficialEntonces: 2.9,
+      dolarBlueEntonces: 3.1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 40000,
+      ejemploConcreto: 'Multa máxima de $G, equivalente a USD pocos cientos hoy.'
+    },
+    tags: ['edificios', 'seguridad', 'multas'],
+    fuente: 'Ministerio del Interior'
+  },
+  {
+    id: '28',
+    numero: 'Ley 25.877',
+    nombre: 'Régimen de Trabajo Agrario',
+    descripcion: 'Régimen especial de trabajo agrario',
+    año: 2004,
+    categoria: 'Laboral',
+    estado: 'Vigente',
+    motivoObsoleto: 'Salarios de referencia completamente desactualizados.',
+    contextoHistorico: 'Protección a trabajadores rurales.',
+    impactoActual: 'Valores irrelevantes para economía actual.',
+    datosEconomicos: {
+      dolarOficialEntonces: 2.9,
+      dolarBlueEntonces: 3.1,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 40000,
+      ejemploConcreto: 'Jornal referencia de $H que hoy es menos de USD 1.'
+    },
+    tags: ['agrario', 'rural', 'salarios'],
+    fuente: 'Ministerio de Trabajo'
+  },
+  {
+    id: '29',
+    numero: 'Ley 26.331',
+    nombre: 'Presupuestos Mínimos de Bosques',
+    descripcion: 'Ley de presupuestos mínimos de protección ambiental de bosques nativos',
+    año: 2007,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Fondos de compensación en pesos sin actualización.',
+    contextoHistorico: 'Protección de bosques nativos.',
+    impactoActual: 'Fondos insuficientes para protección real.',
+    datosEconomicos: {
+      dolarOficialEntonces: 3.1,
+      dolarBlueEntonces: 3.3,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 38000,
+      ejemploConcreto: 'Fondo de $I millones que hoy vale una fracción.'
+    },
+    tags: ['medio ambiente', 'bosques', 'proteccion'],
+    fuente: 'Ministerio de Ambiente'
+  },
+  {
+    id: '30',
+    numero: 'Ley 26.522',
+    nombre: 'Servicios de Comunicación Audiovisual',
+    descripcion: 'Ley de medios audiovisuales',
+    año: 2009,
+    categoria: 'Administrativa',
+    estado: 'Vigente',
+    motivoObsoleto: 'Multas en pesos sin actualización.',
+    contextoHistorico: 'Reforma de medios de comunicación.',
+    impactoActual: 'Multas irrisorias para grandes empresas.',
+    datosEconomicos: {
+      dolarOficialEntonces: 3.8,
+      dolarBlueEntonces: 4,
+      dolarOficialAhora: 1200,
+      dolarBlueAhora: 1350,
+      inflacionAcumulada: 31500,
+      ejemploConcreto: 'Multa máxima de $J, equivalente a USD pocos cientos hoy.'
+    },
+    tags: ['medios', 'comunicacion', 'multas'],
+    fuente: 'AFSCA'
+  }
+];
